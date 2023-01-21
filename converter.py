@@ -21,4 +21,4 @@ def main():
     os.system(f'mv {location} {mp3_name}')
 
 if __name__ == '__main__':
-  main() 
+  main()
