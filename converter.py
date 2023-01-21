@@ -13,7 +13,7 @@ def main():
   name = pytube.extract.video_id(link)
   Youtube(link).streams.filter(only_audio=True).first().download(filename=name)
   location = path + name + '.mp4'
-  mp3_name = path + name + '.mp3'
+  mp3_name = path + name + '.mp3' 
 
   if os.name == 'nt':
     os.system(f'ren {location} {mp3_name}')
