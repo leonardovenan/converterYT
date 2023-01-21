@@ -15,7 +15,7 @@ def main():
   location = path + name + '.mp4'
   mp3_name = path + name + '.mp3' 
 
-  if os.name == 'nt':
+  if os.name == 'nt':  
     os.system(f'ren {location} {mp3_name}')
   else:
     os.system(f'mv {location} {mp3_name}')
